@@ -1,0 +1,39 @@
+<!DOCTYPE html>   
+<html lang="pt-BR">   
+    <head>   
+        <meta charset="UTF-8">   
+        <title> Cadrastro do Piloto - Kart GT </title>   
+        <link rel="stylesheet" href="style.css">   
+    </head> 
+    <body>
+        <form id="formCadastro">
+            <h2> Novo Cadastro </h2>
+
+            <label for="cadNome"> Nome Completo: </label>
+            <input type="text" id="cadNome" placeholder="Ayrton Sena" required>
+
+            <label for="cadIdade"> Idade: </label>
+            <input type="number" id="cadIdade" placeholder="Ex:28" min="1" max="120" required>
+
+            <label for="cadNascimento"> Data Nascimento: </label>
+            <input type="date" id="cadNascimento" required>
+
+            <label for="cadCpf"> CPF: </label>
+            <input type="text" id="cadCpf" placeholder="000.000.000-00" maxlength="14" required>
+
+            <label for="cadEndereço"> Endereço: </label>
+            <input type="text" id="cadEndereço" placeholder="Rua, número, bairro e cidade" required>
+
+            <label for="cadUsuario"> Usuário (Piloto) </label>
+            <input type="text" id="cadUsuario" placeholder="Nome do Usuário" required>
+
+            <label for="cadSenha"> Senha: </label>
+            <input type="password" id="cadSenha" placeholder="Crie sua Senha" required>
+
+            <button type="submit"> Finalizar Cadrastro </button>
+            <button type="button" id="btnVoltarLogin" onclick="window.location.href='index.html'"> Voltar ao Login </button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
+

@@ -1,35 +1,36 @@
-<!DOCTYPE html>   <html lang="pt-BR">   
-    <head>   
-        <meta charset="UTF-8">   
-        <title> Painel do Piloto - Kartodromo Speed </title>   
-        <link rel="#style" href="style.css">   
-    </head>   
-    <body>   <div class="card-home">   
-    <h2> Kartodromo Speed </h2>   
-    <p id="mensagemdeBoasVindas"> Bem vindo, Piloto! </p>   
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title> Painel do Piloto - Kartodromo Speed </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-    <form id="formAgendamento">   
-        <label for="dataCorrida"> Escolha a Data: </label>   
-        <input type="date" id="dataCorrida" required>   
+    <div class="card-home">
+        <h2> Kartodromo Speed </h2>
+        <p id="mensagemdeBoasVindas"> Bem vindo, Piloto! </p>
 
-        <label for="pistaCorrida"> Escolha a pista: </label>   
-        <select id="pistaCorrida" required>   
-            <option value=" "> Selecione uma pista </option>   
-            <option value=" "> Pista Asfalto (indoor) </option>   
-            <option value=" "> Circuito Rápido (Outdoor) </option>   
-            <option value=" "> Pista Noturna Pro </option>   
-        </select>   
+        <form id="formAgendamento">
+            <label for="dataCorrida"> Escolha a Data: </label>
+            <input type="date" id="dataCorrida" required>
 
-        <button type="submit"> Confirmar Agendamento </button>   
-    </form>   
+            <label for="pistaCorrida"> Escolha a pista: </label>
+            <select id="pistaCorrida" required>
+                <option value=" "> Selecione uma pista </option>
+                <option value=" "> Pista Asfalto (indoor) </option>
+                <option value=" "> Circuito Rápido (Outdoor) </option>
+                <option value=" "> Pista Noturna Pro </option>
+            </select>
 
-    <p id="statusAgendamento"></p>   
+            <button type="submit"> Confirmar Agendamento </button>
+        </form>
 
-    <button id="btnSair"> Sair </button>   
-</div>   
+        <p id="statusAgendamento"></p>
 
-<script src="script.js"></script>   
+        <button id="btnSair"> Sair </button>
+    </div>
 
-</body>
-
+    <script src="script.js"></script>
+    </body>
 </html>
